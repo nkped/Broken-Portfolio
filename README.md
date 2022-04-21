@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+## Portfolio site under construction
+**Showcasing projects, hosting blog and personal deets.**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+### Buildsteps
+Publish a create-react-app (CRA) on Github Pages (as user-page) 
+Best darn manual in this other Github Repository (Repo): https://github.com/gitname/react-gh-pages
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Next Steps
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Research ressources**
+- https://reactjs.org/docs/create-a-new-react-app.html
+- https://create-react-app.dev/docs/getting-started
+- https://dev.to
+- https://reactstrap.github.io/?path=/docs
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### First Steps
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Build very simple components**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Failing or global variables**
+Eslint will complain about global variables. If the following will apeace eslint:
+`const $ = window.$;`   (exsplicitly tells eslint I want global variable)
+..then variable is global (and should be changed).
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Second Steps
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**React Bootstrap / React Strap**
+The latter being a lightweight version, it should be considered for early implementation
+https://create-react-app.dev/docs/adding-bootstrap
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**React Flow seems doable and usefull.**
+Flow, like Typescript is a static type chekker. But Flow seems the simplest (is a dependency - not its own prog. lang.)
+Flow vs Typescript, blog:
+https://www.scalablepath.com/javascript/flow-vs-typescript
+CRA-guide
+https://create-react-app.dev/docs/adding-typescript
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Further Steps
 
-### Code Splitting
+**Format staged code automatically for commits with Prettier**
+https://create-react-app.dev/docs/setting-up-your-editor/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+**Develope components in isolation with Storybook**
+https://create-react-app.dev/docs/developing-components-in-isolation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+**Using HTTPS in Development, fx when working with API serving https**
+https://create-react-app.dev/docs/
+To do this, set the HTTPS environment variable to true, then start the dev server as usual with `npm start`:
+
+
+## Some links for my own convenience
+
 
 ### Making a Progressive Web App
-
 This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
