@@ -5,8 +5,12 @@
 
 
 ### Buildsteps
-Publish a create-react-app (CRA) on Github Pages (as user-page) 
-Best darn manual in this other Github Repository (Repo): https://github.com/gitname/react-gh-pages
+
+:construction_worker_man: Publish a create-react-app (CRA) on Github Pages (as user-page). ✔️
+
+😉 Best OT-manual located in this other Github Repository (Repo) here: https://github.com/gitname/react-gh-pages
+
+:construction_worker_man: Import boostrap, react-bootstrap with ´npm install bootstrap react-bootstrap´.
 
 
 
@@ -21,19 +25,23 @@ Best darn manual in this other Github Repository (Repo): https://github.com/gitn
 
 ### First Steps
 
-**Build very simple components**
+**Install React-Router-Bootstrap**
+*React Bootstrap uses functions and hooks, aka modern react, instead of classes, utilized by React Strap.*
+**Ressources**
+- https://create-react-app.dev/docs/adding-bootstrap
+- https://github.com/freeCodeCamp/actual-react-router-bootstrap
 
-**Failing or global variables**
+**Build simple components/pages**
+
+**ASIDE - Failing or global variables**
 Eslint will complain about global variables. If the following will apeace eslint:
 `const $ = window.$;`   (exsplicitly tells eslint I want global variable)
 ..then variable is global (and should be changed).
 
 
 ## Second Steps
+**Add prebuild projects**
 
-**React Bootstrap / React Strap**
-The latter being a lightweight version, it should be considered for early implementation
-https://create-react-app.dev/docs/adding-bootstrap
 
 **React Flow seems doable and usefull.**
 Flow, like Typescript is a static type chekker. But Flow seems the simplest (is a dependency - not its own prog. lang.)
