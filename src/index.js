@@ -4,8 +4,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import reportWebVitals from "./reportWebVitals";
 
+//Styles
 import "./index.css";
 import App from "./App";
+
+//App
+import Om from "./routes/om";
+import Apps from "./routes/apps";
 
 const rootElement = document.getElementById("root");
 
@@ -14,7 +19,11 @@ const root = ReactDOMClient.createRoot(rootElement);
 root.render(
   <StrictMode>
     <BrowserRouter>
-      <App />
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="Om" element={<Om />} />
+        <Route path="Apps" element={<Apps />} />
+      </Routes>
     </BrowserRouter>
   </StrictMode>
 );
