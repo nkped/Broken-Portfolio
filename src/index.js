@@ -1,3 +1,4 @@
+//React
 import { StrictMode } from "react";
 import * as ReactDOMClient from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -9,14 +10,11 @@ import Om from "./routes/om";
 import Apps from "./routes/apps";
 import Blog from "./routes/blog";
 import BlogPost from "./routes/blogPost";
-
 //Testing
 import reportWebVitals from "./reportWebVitals";
-
+//Render med createRoot
 const rootElement = document.getElementById("root");
-
 const root = ReactDOMClient.createRoot(rootElement);
-
 root.render(
   <StrictMode>
     <BrowserRouter>
