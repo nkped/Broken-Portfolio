@@ -5,7 +5,7 @@ export default function BlogPost() {
   let params = useParams();
   let blogPost = getBlogPost(parseInt(params.blogPostId, 10));
   return (
-    <main style={{ padding: "1rem" }}>
+    <main>
       <h2>Total Due: {blogPost.amount}</h2>
       <p>
         {blogPost.name}: {blogPost.number}

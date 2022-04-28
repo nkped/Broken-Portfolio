@@ -1,6 +1,6 @@
 export default function Apps() {
   return (
-    <main style={{ padding: "1rem 0" }}>
+    <main>
       <h2>Apps</h2>
     </main>
   );

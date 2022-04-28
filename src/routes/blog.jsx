@@ -5,9 +5,9 @@ export default function Blog() {
   let blogPosts = getBlogPosts();
   let [searchParams, setSearchParams] = useSearchParams();
   return (
-    <main style={{ padding: "1rem 0" }}>
+    <main>
       <h2>Blog</h2>
-      <div style={{ display: "flex" }}>
+      <div>
         <input
           value={searchParams.get("filter") || ""}
           onChange={(event) => {
@@ -27,17 +27,7 @@ export default function Blog() {
             return name.startsWith(filter.toLowerCase());
           })
           .map((blogPost) => (
-            <NavLink
-              style={({ isActive }) => {
-                return {
-                  display: "block",
-                  margin: "1rem 0",
-                  color: isActive ? "orange" : "",
-                };
-              }}
-              to={`/blog/${blogPost.number}`}
-              key={blogPost.number}
-            >
+            <NavLink to={`/blog/${blogPost.number}`} key={blogPost.number}>
               {blogPost.name}
             </NavLink>
           ))}

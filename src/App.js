@@ -12,7 +12,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Setting up routing!</h1>
         <nav
           style={{
             borderBottom: "solid 1px",
@@ -23,6 +22,7 @@ function App() {
           <Link to="/apps">Apps</Link> | <Link to="/blog">Blog</Link>
         </nav>
         <Outlet />
+        <h1>Setting up routing!</h1>
       </header>
     </div>
   );

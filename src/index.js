@@ -28,7 +28,7 @@ root.render(
             <Route
               index
               element={
-                <main style={{ padding: "1rem" }}>
+                <main>
                   <p>Find en blogindlæg!</p>
                 </main>
               }
@@ -38,7 +38,7 @@ root.render(
           <Route
             path="*"
             element={
-              <main style={{ padding: "1rem" }}>
+              <main>
                 <p>Beklager, siden findes ikke!</p>
               </main>
             }
