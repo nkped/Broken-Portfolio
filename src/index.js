@@ -1,16 +1,17 @@
 import { StrictMode } from "react";
 import * as ReactDOMClient from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-import reportWebVitals from "./reportWebVitals";
-
 //Styles
 import "./index.css";
-import App from "./App";
-
 //App
+import App from "./App";
 import Om from "./routes/om";
 import Apps from "./routes/apps";
+import Blog from "./routes/blog";
+import BlogPost from "./routes/blogPost";
+
+//Testing
+import reportWebVitals from "./reportWebVitals";
 
 const rootElement = document.getElementById("root");
 
@@ -20,9 +21,29 @@ root.render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="Om" element={<Om />} />
-        <Route path="Apps" element={<Apps />} />
+        <Route path="/" element={<App />}>
+          <Route path="om" element={<Om />} />
+          <Route path="apps" element={<Apps />} />
+          <Route path="blog" element={<Blog />}>
+            <Route
+              index
+              element={
+                <main style={{ padding: "1rem" }}>
+                  <p>Find en blogindlæg!</p>
+                </main>
+              }
+            />
+            <Route path=":blogPostId" element={<BlogPost />} />
+          </Route>
+          <Route
+            path="*"
+            element={
+              <main style={{ padding: "1rem" }}>
+                <p>Beklager, siden findes ikke!</p>
+              </main>
+            }
+          />
+        </Route>
       </Routes>
     </BrowserRouter>
   </StrictMode>

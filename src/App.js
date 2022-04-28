@@ -1,13 +1,12 @@
-import "./App.css";
 //React
-import { Link } from "react-router-dom";
+import React from "react";
+import { Link, Outlet } from "react-router-dom";
+//Styles
+import "./App.css";
 
 //Bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
-import Button from "react-bootstrap/Button";
-import Alert from "react-bootstrap/Alert";
-import Breadcrumb from "react-bootstrap/Breadcrumb";
-import Card from "react-bootstrap/Card";
+//import Button from "react-bootstrap/Button";
 
 function App() {
   return (
@@ -20,8 +19,10 @@ function App() {
             paddingBottom: "1rem",
           }}
         >
-          <Link to="/om">Om</Link> | <Link to="/apps">Apps</Link>
+          <Link to="/">Home</Link> | <Link to="/om">Om</Link> |{" "}
+          <Link to="/apps">Apps</Link> | <Link to="/blog">Blog</Link>
         </nav>
+        <Outlet />
       </header>
     </div>
   );
