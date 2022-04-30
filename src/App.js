@@ -1,6 +1,6 @@
 //React
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 //Styles
 import "./App.css";
 
@@ -18,11 +18,12 @@ function App() {
             paddingBottom: "1rem",
           }}
         >
-          <Link to="/">Home</Link> | <Link to="/om">Om</Link> |{" "}
-          <Link to="/apps">Apps</Link> | <Link to="/blog">Blog</Link>
+          <NavLink to="/">Home</NavLink> | <NavLink to="/om">Om</NavLink> |{" "}
+          <NavLink to="/apps">Apps</NavLink> |{" "}
+          <NavLink to="/blog">Blog</NavLink>
         </nav>
         <Outlet />
-        <h1>Setting up routing!</h1>
+        <h1>Er routing up to date?!</h1>
       </header>
     </div>
   );

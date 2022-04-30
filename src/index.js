@@ -20,27 +20,14 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />}>
+          <Route index element={<Home />} />
           <Route path="om" element={<Om />} />
           <Route path="apps" element={<Apps />} />
           <Route path="blog" element={<Blog />}>
-            <Route
-              index
-              element={
-                <main>
-                  <p>Find en blogindlæg!</p>
-                </main>
-              }
-            />
             <Route path=":blogPostId" element={<BlogPost />} />
+            <Route index element={<SearchBlog />} />
           </Route>
-          <Route
-            path="*"
-            element={
-              <main>
-                <p>Beklager, siden findes ikke!</p>
-              </main>
-            }
-          />
+          <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>
     </BrowserRouter>
