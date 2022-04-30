@@ -10,6 +10,9 @@ import Om from "./routes/om";
 import Apps from "./routes/apps";
 import Blog from "./routes/blog";
 import BlogPost from "./routes/blogPost";
+import Home from "./routes/home";
+import NoMatch from "./routes/no_match";
+import SearchBlog from "./routes/search_blog";
 //Testing
 import reportWebVitals from "./reportWebVitals";
 //Render med createRoot

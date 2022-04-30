@@ -23,7 +23,6 @@ function App() {
           <NavLink to="/blog">Blog</NavLink>
         </nav>
         <Outlet />
-        <h1>Er routing up to date?!</h1>
       </header>
     </div>
   );
