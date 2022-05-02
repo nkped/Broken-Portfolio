@@ -12,7 +12,7 @@ import Blog from "./routes/blog";
 import BlogPost from "./routes/blogPost";
 import Home from "./routes/home";
 import NoMatch from "./routes/no_match";
-import SearchBlog from "./routes/search_blog";
+
 //Testing
 import reportWebVitals from "./reportWebVitals";
 //Render med createRoot
@@ -28,7 +28,6 @@ root.render(
           <Route path="apps" element={<Apps />} />
           <Route path="blog" element={<Blog />}>
             <Route path=":blogPostId" element={<BlogPost />} />
-            <Route index element={<SearchBlog />} />
           </Route>
           <Route path="*" element={<NoMatch />} />
         </Route>
